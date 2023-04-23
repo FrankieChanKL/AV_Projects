@@ -7,3 +7,15 @@ A[Hard edge] -->B(Round edge)
     C -->|One| D[Result one]
     C -->|Two| E[Result two]
 ```
+
+
+```mermaid
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
